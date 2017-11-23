@@ -1,0 +1,370 @@
+/* CSS RESET SECTION
+------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main, video { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+    blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none;
+    }
+
+
+/* -----------------------------
+     general section
+-------------------------------- */
+.container{
+    width: 960px;
+    margin:0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+
+@font-face {
+    font-family: hothead;
+    src: url("../fonts/hothead.ttf") format("truetype");
+    font-family: firedancer;
+    src: url("../fonts/FireDancer.ttf") format("truetype");
+
+}
+
+
+
+/*-------------------------
+      Header Section
+----------------------------*/
+
+main{
+    position: relative;
+}
+nav ul{
+    background-color:  darkolivegreen;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    background-color: darkolivegreen;
+    text-transform: capitalize;
+    text-shadow: black 0.5px 0.5px;
+    color: orange;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: orange;
+    color: darkolivegreen;
+}
+
+nav a:active {
+    text-decoration: underline;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+/* -----------------------------
+       body section
+---------------------------------*/
+.banner {
+    position: relative;
+    width: 960px;
+}
+
+.banner img{
+    height: 300px;
+}
+
+h1 {
+
+    color: olivedrab;
+    font: 24px firedancer;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+
+    color: rebeccapurple;
+    font: 18px firedancer;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.facts{
+
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+
+
+}
+
+h3{
+    color: red;
+    font: 24px firedancer;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+h4{
+    color: orange;
+    font: 18px firedancer;
+    margin: 20px auto;
+    text-align: left;
+
+}
+
+
+.anchor{
+    margin: 18px;
+
+
+}
+
+img.anchor{
+    box-shadow: 3px 3px 5px black;
+    border-radius:7px;
+
+
+}
+
+img.anchor:hover{
+    opacity: 0.7;
+
+}
+
+img.anchor:active {
+    box-shadow: 0px 0px 0px black;
+
+}
+img.right{
+    box-shadow: 3px 3px 5px black;
+    border-radius:7px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+img.left{
+    float: left;
+
+
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.two-thirds{
+    width: 68%;
+}
+
+.one-third{
+    margin-top: 15px;
+    width: 34%;
+}
+
+.back{
+    color: orange;
+    padding: 15px;
+    text-shadow: black 0.5px 0.5px;
+    border-radius:7px;
+    background-color: darkolivegreen;
+    box-shadow: 3px 3px 5px black;
+    margin: 42%;
+    text-decoration: none;
+    position: relative;
+    top: 40px;
+
+}
+
+.back:active{
+    box-shadow: 0px 0px 0px white;
+
+}
+
+p{
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: justify;
+    padding-top: 10px;
+    font: 18px hothead ;
+
+
+}
+
+fieldset p{
+    margin-left: 20px;
+}
+
+.facts p {
+    margin-right: 10px;
+
+}
+
+
+#right{
+    width: 50%;
+    float: right;
+}
+
+#left{
+    width: 50%;
+}
+
+
+fieldset{
+    border: none 5px black;
+    padding: 10px 0;
+
+}
+
+#message{
+    height: 200px;
+
+    width: 450px;
+    background-color: gainsboro;
+    color: grey;
+    text-shadow: black 0.5px 0.5px;
+
+}
+
+#name{
+    width: 250px;
+    float: right;
+    margin-right: 460px;
+    background-color: gainsboro;
+    color: grey;
+    text-shadow: black 0.5px 0.5px;
+
+}
+
+#email {
+    width: 250px;
+    float: right;
+    margin-right: 460px;
+    background-color: gainsboro;
+    color: grey;
+    text-shadow: black 0.5px 0.5px;
+
+}
+
+#conemail{
+    width: 250px;
+    float: right;
+    margin-right: 460px;
+    background-color: gainsboro;
+    color: grey;
+    text-shadow: black 0.5px 0.5px;
+
+
+}
+
+#pass{
+    width: 250px;
+    float: right;
+    margin-right: 460px;
+    background-color: gainsboro;
+    color: grey;
+    text-shadow: black 0.5px 0.5px
+
+
+}
+
+.scale{
+    float: left;
+}
+
+.icon{
+    margin-left: 10px;
+}
+
+div.chilli{
+    float: right ;
+
+    width: 70%
+
+}
+
+
+
+
+#reset{
+    height: 30px;
+    border-radius: 10%;
+}
+
+#submit{
+    height: 30px;
+    border-radius: 10%;
+}
+
+#reset:hover{
+    color: rebeccapurple;
+    background-color: red;
+
+
+}
+
+#submit:hover{
+    color: orange;
+    background-color: darkolivegreen;
+
+}
+
+
+
+/*-----------------------------
+        footer section
+------------------------------*/
+
+footer{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-top: groove rebeccapurple 2px ;
+    color: olivedrab;
+}

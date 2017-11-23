@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chilli Head</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img class="logo" src="imgs/logo.jpg" width="300" height="300" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="health.html">Health Benefits</a></li>
+                <li><a href="gallery.html">Plants</a></li>
+                <li><a href="members.html">Become a Member</a></li>
+            </ul>
+        </nav>
+    </div><!--header container-->
+</header>
+
+<main>
+    <div class="container">
+
+        <h1>
+            Become a Member
+        </h1>
+
+
+
+
+                <div id="right">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9443.261829692548!2d-0.5171256560868034!3d53.72154983094852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4878ea1dba1680b7%3A0xe1578260f7cfd3e0!2sNorth+Ferriby%2C+UK!5e0!3m2!1sen!2suk!4v1486139012353" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div id="left">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Details:</legend>
+
+                    <p>
+                        <label for="name">Please Enter Your Name:</label>
+                        <input type="text" id="name" value="" name="name" placeholder="enter name here">
+                    </p>
+
+                    <p>
+                        <label for="email">Please Enter Your Email:</label>
+                        <input type="email" id="email" value="" name="email" placeholder="enter email here">
+                    </p>
+
+                    <p>
+                        <label for="conemail">Please Confirm Your Email:</label>
+                        <input type="email" id="conemail" value="" name="conemail" placeholder="confirm email here">
+                    </p>
+
+                    <p>
+                        <label for="pass">Please enter Your Password:</label>
+                        <input type="password" id="pass" value="" name="pass" placeholder="enter password here">
+                    </p>
+
+                    </fieldset>
+
+                <p>
+
+                </p>
+
+                <fieldset>
+                    <legend>Some Like It Hot:</legend>
+
+                    <p class="scale">
+                        <input type="radio" name="heat" value="mild"disabled>Mild
+                    </p>
+
+                        <div class="chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        </div>
+
+
+                    <p class="scale">
+                        <input type="radio" name="heat" value="medium">Medium
+                    </p>
+
+                        <div class="chilli">
+                        <img class="icon" src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        </div>
+
+
+                    <p class="scale">
+                        <input type="radio" name="heat" value="hot"checked>Hot
+                    </p>
+
+                    <div class="chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                    </div>
+
+                    <p class="scale">
+                         <input type="radio" name="heat" value="veryhot">Very Hot
+                    </p>
+
+                    <div class="chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                    </div>
+
+                    <p class="scale">
+                        <input type="radio" name="heat" value="extreme">Extreme
+                    </p>
+
+                    <div class="chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                        <img class="icon"  src="imgs/redchilli.png"  width="13" height="35" alt="red chilli">
+                    </div>
+
+                </fieldset>
+
+                <p>
+
+                </p>
+
+                <fieldset>
+                    <legend>Message:</legend>
+
+                    <p><label for="message">Enter your message here:</label></p>
+                    <p><textarea name="msg" id="message" placeholder="your message...."></textarea></p>
+
+                    </fieldset>
+
+                <p>
+
+                </p>
+
+                <fieldset>
+                    <legend>Payment Options:</legend>
+
+                    <p>
+                        <select name="aboutUs" id="aboutUs" multiple>
+                            <option value="card" selected>Card</option>
+                            <option value="paypall">PayPal</option>
+                            <option value="Dwolla" >Dwolla</option>
+                            <option value="Authorize.Net">Authorize.Net</option>
+                            <option value="Stripe" >Stripe</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <p>
+
+                </p>
+
+                <fieldset>
+                    <p>
+                        <button id="reset" type="reset">clear form</button>
+                        <button id="submit" type="submit">submit form</button>
+                    </p>
+
+                </fieldset>
+
+            </form>
+    </div>
+
+    </div><!--main container-->
+</main>
+
+<div class="container">
+    <footer>
+        <div class="container">
+            <p class="footer">
+                The content does not belong to me but to its respective owners. This is a project for training dragon
+            </p>
+        </div><!--footer container-->
+    </footer>
+</div>
+
+
+</body>
+</html>
